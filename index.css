@@ -1,0 +1,27 @@
+body{
+	margin: 0;
+}
+
+ul{
+	list-style:none;
+	padding:0;
+}
+
+label{
+	display: block;
+}
+
+fieldset{
+	border: 1px groove;
+	padding: 0;
+}
+
+select{
+	width: 100%;
+	padding-bottom:1em;
+}
+
+input{
+	width: 100%;
+	padding-bottom:1em;
+}
