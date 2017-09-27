@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<!-- jimmy ong, 9/25/2017, repair appointment -->
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>预约维修</title>
+<script type="text/javascript" src="index.js"></script>
+<link rel="stylesheet" type="text/css" href="index.css">
+<!-- Polyfill to add support for HTML5 elements to old browsers -->
+<!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Polyfill to add support for media queries to old browsers 
+     See https://github.com/scottjehl/Respond for more info 
+     or to grab current version -->
+     	
+</head>
+<body>
+<h1>预约维修</h1>
+<article>
+<form id="info" action="https://formspree.io/jimmyong778@gmail.com" method="post">
+ <input type="hidden" name="subject" value="subject">
+ <input type="hidden" name="redirect" value="http://zweng.butlerccwebdev.net/joesauto/thankyou.html">
+ <fieldset id="info-user">
+ <legend>用户信息</legend>
+<ul>
+<li><label for="user-name">姓名(可随意填写)</label><input type="text" name="username" id="user-name" required></li>
+<li><label for="user-address">地址</label><input type="text" name="useraddress" id="user-address" required></li>
+<li><label for="user-city">城市</label>
+<select name="usercity" id="user-city">
+	<option>Minneapolis</option>
+	<option>Brooklyn Park</option>
+	<option>Golden Valley</option>
+	<option>Edina</option>
+	<option>Burnsville</option>
+</select>
+</li>
+<li><label for="user-email">手机号</label><input type="text" name="userphone" id="user-phone" required><em>*请确保手机号正确，以便联系</em></li>
+</ul>
+</fieldset>
+
+<fieldset id="info-device">
+<legend>预约信息</legend>
+<ul>
+<li><label for="dev-type">设备类型</label>
+	<select name="devtype" id="dev-type">
+		<option value="">请选择设备类型</option>
+		<option value="0">手机</option>
+		<option value="1">平板</option>
+	</select>
+</li>
+<li><label for=="dev-brand">品牌</label>
+	<select name="devbrand" id="dev-brand">
+		<option value="">请选择品牌</option>
+	</select>
+</li>
+<li><label for="dev-model">型号</label>
+	<select name="devmodel" id="dev-model">
+		<option value="">请选择型号</option>
+	</select>
+</li>
+<li><label for="dev-color">颜色</label>
+	<select name="devcolor" id="dev-color">
+		<option value="">请选择颜色</option>
+	</select>
+</li>
+<li><label for="dev-damage">损坏</label>
+	<select name="devdamage" id="dev-damage">
+		<option value="">请选择损坏类型</option>
+		<option>屏幕碎</option>
+		<option>无法开机</option>
+		<option>电池损坏</option>
+	</select>
+</li>
+</ul>
+
+
+
+<p><input id="submit" type="submit" value="Send"></p>
+</form>
+</article>
+<footer>Site developed by Jimmy Ong. Copyright &copy;2007-2017 All Rights Reserved.</footer>
+</body>
+</html>
