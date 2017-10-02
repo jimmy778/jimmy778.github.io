@@ -1,5 +1,7 @@
 body{
-	margin: 0;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	background:pink;
 }
 
 ul{
@@ -12,16 +14,40 @@ label{
 }
 
 fieldset{
-	border: 1px groove;
-	padding: 0;
+	border: none;
+	padding:0;
+}
+
+fieldset legend{
+	font-weight: bold;
 }
 
 select{
 	width: 100%;
-	padding-bottom:1em;
+	border-radius:1em;
+	padding-left:1%;
+	padding-right:1%;
+	margin-top:1em;
+	margin-bottom:1em;
 }
 
 input{
-	width: 100%;
+	width: 98%;
+	border-radius:1em;
+	border:1px solid gray;
+	padding-left:1%;
+	padding-right:1%;
 	padding-bottom:1em;
+	margin-top:1em;
+	margin-bottom:1em;
+}
+
+
+h1{
+	font-size: 1.5em;
+}
+
+footer{
+	
+	padding: 1%;
 }
