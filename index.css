@@ -1,7 +1,7 @@
 body{
 	padding-left: 0.5em;
 	padding-right: 0.5em;
-	background:pink;
+	background:url('bg.jpg');
 	color:#384049;
 }
 
@@ -25,9 +25,13 @@ fieldset legend{
 	font-weight: bold;
 }
 
+em{
+	font-size:0.9em;
+}
+
 select{
 	width: 98%;
-	height:2em;
+	height:2.5em;
 	vertical-align:middle;
 	border-radius:0.3em;
 	border:none;
@@ -48,7 +52,7 @@ select:focus{
 
 input{
 	width: 96%;
-	height:2em;
+	height:2.5em;
 	line-height:2em;
 	vertical-align:middle;
 	border-radius:0.3em;
