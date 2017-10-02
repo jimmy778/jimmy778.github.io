@@ -2,6 +2,7 @@ body{
 	padding-left: 0.5em;
 	padding-right: 0.5em;
 	background:pink;
+	color:#586069;
 }
 
 ul{
@@ -33,6 +34,7 @@ select{
 	-webkit-appearance: none;
     -moz-appearance: none;
 	appearance:none;
+	color:#586069;
 }
 
 input{
@@ -44,7 +46,7 @@ input{
 	border:none;
 	margin:1%;
 	padding-left:2%;
-	//padding-right:1%;
+	color:#586069;
 }
 
 
