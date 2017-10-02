@@ -12,6 +12,8 @@ ul{
 
 label{
 	display: block;
+	margin-top:1%;
+	margin-bottom:1%;
 }
 
 fieldset{
@@ -49,7 +51,7 @@ input{
 	height:2em;
 	line-height:2em;
 	vertical-align:middle;
-	border-radius:0.3em;;
+	border-radius:0.3em;
 	border:none;
 	margin:1%;
 	padding-left:2%;
