@@ -27,7 +27,7 @@ select{
 	width: 98%;
 	height:2em;
 	vertical-align:middle;
-	border-radius:1em;
+	border-radius:0.3em;
 	border:none;
 	margin:1%;
 	padding-left:1%;
@@ -36,10 +36,12 @@ select{
 	appearance:none;
 	color:#384049;
 	background:white;
+	outline:none;
 }
 
 select:focus{
 	border: 1px solid green;
+	
 }
 
 input{
@@ -47,11 +49,12 @@ input{
 	height:2em;
 	line-height:2em;
 	vertical-align:middle;
-	border-radius:1em;
+	border-radius:0.3em;;
 	border:none;
 	margin:1%;
 	padding-left:2%;
 	color:#384049;
+	outline:none;
 }
 
 input:focus{
