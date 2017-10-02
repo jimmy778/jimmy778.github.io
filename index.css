@@ -35,7 +35,7 @@ select{
     -moz-appearance: none;
 	appearance:none;
 	color:#586069;
-	background:none;
+	background:white;
 }
 
 input{
