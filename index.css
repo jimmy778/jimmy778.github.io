@@ -38,6 +38,10 @@ select{
 	background:white;
 }
 
+select:focus{
+	border: 1px solid green;
+}
+
 input{
 	width: 96%;
 	height:2em;
@@ -50,6 +54,9 @@ input{
 	color:#384049;
 }
 
+input:focus{
+	border: 1px solid green;
+}
 
 h1{
 	font-size: 1.5em;
