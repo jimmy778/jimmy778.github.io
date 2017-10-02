@@ -2,7 +2,7 @@ body{
 	padding-left: 0.5em;
 	padding-right: 0.5em;
 	background:pink;
-	color:#586069;
+	color:#384049;
 }
 
 ul{
@@ -34,7 +34,7 @@ select{
 	-webkit-appearance: none;
     -moz-appearance: none;
 	appearance:none;
-	color:#586069;
+	color:#384049;
 	background:white;
 }
 
@@ -47,7 +47,7 @@ input{
 	border:none;
 	margin:1%;
 	padding-left:2%;
-	color:#586069;
+	color:#384049;
 }
 
 
