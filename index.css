@@ -27,18 +27,24 @@ select{
 	height:2em;
 	vertical-align:middle;
 	border-radius:1em;
+	border:none;
 	margin:1%;
+	padding-left:1%;
+	-webkit-appearance: none;
+    -moz-appearance: none;
 	appearance:none;
 }
 
 input{
-	width: 98%;
+	width: 96%;
 	height:2em;
 	line-height:2em;
 	vertical-align:middle;
 	border-radius:1em;
-	border:1px solid gray;
+	border:none;
 	margin:1%;
+	padding-left:2%;
+	//padding-right:1%;
 }
 
 
