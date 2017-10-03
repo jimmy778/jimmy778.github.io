@@ -12,8 +12,8 @@ ul{
 
 label{
 	display: block;
-	margin-top:1%;
-	margin-bottom:1%;
+	margin-top:0.5em;
+	margin-bottom:0.5em;
 }
 
 fieldset{
@@ -29,13 +29,21 @@ em{
 	font-size:0.9em;
 }
 
+li{
+	width:98%;
+	margin-left:auto;
+	margin-right:auto;
+	
+}
+
 select{
-	width: 98%;
+	width: 100%;
 	height:2.5em;
 	vertical-align:middle;
 	border-radius:0.3em;
 	border:none;
-	margin:1%;
+	margin-top:0.5em;
+	margin-bottom:0.5em;
 	padding-left:1%;
 	-webkit-appearance: none;
     -moz-appearance: none;
@@ -51,14 +59,14 @@ select:focus{
 }
 
 input{
-	width: 96%;
+	width: 100%;
 	height:2.5em;
-	line-height:2em;
+	line-height:2.5em;
 	vertical-align:middle;
 	border-radius:0.3em;
 	border:none;
-	margin:1%;
-	padding-left:2%;
+	margin-top:0.5em;
+	margin-bottom:0.5em;
 	color:#384049;
 	outline:none;
 }
@@ -75,4 +83,14 @@ footer{
 	
 	padding: 1%;
 	font-size:0.9em;
+}
+
+#city{
+	width:79%;
+	float:left;
+	margin-right:1%;
+}
+#zip{
+	width:20%;
+	float:left;
 }
