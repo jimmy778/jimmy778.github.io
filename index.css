@@ -1,7 +1,7 @@
 body{
 	padding-left: 0.5em;
 	padding-right: 0.5em;
-	background:pink;
+	background:url('bg.jpg');
 	color:#384049;
 }
 
@@ -12,8 +12,8 @@ ul{
 
 label{
 	display: block;
-	margin-top:0.5em;
-	margin-bottom:0.5em;
+	margin-top:0.3em;
+	margin-bottom:0.3em;
 }
 
 fieldset{
@@ -29,12 +29,7 @@ em{
 	font-size:0.9em;
 }
 
-li{
-	width:98%;
-	margin-left:auto;
-	margin-right:auto;
-	
-}
+
 
 select{
 	width: 100%;
