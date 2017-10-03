@@ -31,8 +31,8 @@ onsubmit="submitted=true;">
  <fieldset id="info-user">
  <legend>用户信息</legend>
 <ul>
-<li><label for="user-name">姓名(可随意填写)</label><input type="text" name="Name" id="user-name"></li>
-<li><label for="user-address">地址</label><input type="text" name="Address" id="user-address" required></li>
+<li><label for="user-name">姓名(可随意填写)</label><input type="text" name="Name" id="user-name" onkeydown="if (event.keyCode == 13) return false;"></li>
+<li><label for="user-address">地址</label><input type="text" name="Address" id="user-address"  onkeydown="if (event.keyCode == 13) return false;" required></li>
 <li>
 <div id="city">
 	<label for="user-city">城市</label>
@@ -47,10 +47,10 @@ onsubmit="submitted=true;">
 </div>
 <div id="zip">
 	<label for="user-zipcode">邮编</label>
-	<input type="number" name="Zipcode" id="user-zipcode">
+	<input type="number" name="Zipcode" id="user-zipcode" onkeydown="if (event.keyCode == 13) return false;" required>
 </div>
 </li>
-<li><label for="user-email">手机号</label><input type="number" name="Phone_Number" id="user-phone" required><em>*请确保手机号正确，以便联系</em></li>
+<li><label for="user-email">手机号</label><input type="number" name="Phone_Number" id="user-phone"  onkeydown="if (event.keyCode == 13) return false;" required><em>*请确保手机号正确，以便联系</em></li>
 </ul>
 </fieldset>
 
@@ -91,7 +91,7 @@ onsubmit="submitted=true;">
 
 
 
-<p><input id="submit" type="submit" value="Send" onkeydown="if(event.KeyCode == 13) return false;"></p>
+<p><input id="submit" type="submit" value="Send"></p>
 </form>
 </article>
 <footer>Site developed by Vincy and Jimmy. Copyright &copy;2016-2017 All Rights Reserved.</footer>
