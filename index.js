@@ -1,6 +1,24 @@
-var brandArr = [["苹果","三星"],["苹果","三星"]];
-var modelArr = [["6","6 Plus","6S","6S Plus"],["S7","S7+","S8","S8+"]];
-var colorArr = [["金","银","粉","黑"],["黑","银"]];
+var typeArr = [{id:0, name:'手机', brand:[
+				{id:0, name:'苹果', model:[
+				 {id:0, name:'iPhone 6', color:['金', '银', '灰']},
+				 {id:1, name:'iPhone 6 Plus', color:['金', '银', '灰']},
+				 {id:2, name:'iPhone 6S', color:['金', '玫瑰金', '银', '灰']},
+				 {id:3, name:'iPhone 6S Plus', color:['金', '玫瑰金', '银', '灰']},
+				 {id:4, name:'iPhone 7', color:['金', '玫瑰金', '银', '灰', '黑']},
+				 {id:5, name:'iPhone 7 Plus', color:['金', '玫瑰金', '银', '灰', '黑']},
+				 {id:6, name:'iPhone SE', color:['金', '玫瑰金', '银', '灰']}]},
+				{id:1, name:'三星', model:[
+				 {id:7, name:'Galaxy S7', color:['黑', '金', '粉']},
+				 {id:8, name:'Galaxy S7 Edge', color:['黑', '金', '粉']},
+				 {id:9, name:'Galaxy S8', color:['黑','银','灰']},
+				 {id:10, name:'Galaxy S8+', color:['黑','银','灰']}]}]}, 
+			   {id:1, name:'平板', brand:[
+			    {id:2, name:'苹果', model:[
+				 {id:11, name:'iPad Pro', color:['金', '玫瑰金', '银', '粉']},
+				 {id:12, name:'iPad', color:['金', '银', '灰']},
+				 {id:13, name:'iPad mini4', color:['金', '银', '灰']}]},
+				{id:3, name:'三星', model:[
+				 {id:14, name:'三星平板', color:['各种颜色']}]}]}];
 window.onload = function(){
 	
 	var typeNode = document.getElementById('dev-type');
@@ -17,10 +35,11 @@ window.onload = function(){
 		brandNode.options.add(new Option("请选择品牌",""));
 		modelNode.options.add(new Option("请选择型号",""));
 		colorNode.options.add(new Option("请选择颜色",""));
-		var index = typeNode.options[typeNode.selectedIndex].value;
-		for(var i=0;i<brandArr[index].length;++i)
+		var indexType = typeNode.options[typeNode.selectedIndex].value;
+		var item = typeArr[indexType];
+		for(var i=0;i<item.brand.length;++i)
 		{
-			brandNode.options.add(new Option(brandArr[index][i], i.toString()));
+			brandNode.options.add(new Option(item.brand[i].name, i.toString()));
 		}
 	}
 	
@@ -30,10 +49,12 @@ window.onload = function(){
 		if(brandNode.options[0].value == "") brandNode.remove(0);
 		modelNode.options.add(new Option("请选择型号",""));
 		colorNode.options.add(new Option("请选择颜色",""));
-		var index = brandNode.options[brandNode.selectedIndex].value;
-		for(var i=0;i<modelArr[index].length;++i)
+		var indexType = typeNode.options[typeNode.selectedIndex].value;
+		var indexBrand = brandNode.options[brandNode.selectedIndex].value;
+		var item = typeArr[indexType].brand[indexBrand];
+		for(var i=0;i<item.model.length;++i)
 		{
-			modelNode.options.add(new Option(modelArr[index][i], i.toString()));
+			modelNode.options.add(new Option(item.model[i].name, i.toString()));
 		}
 	}
 	
@@ -41,10 +62,13 @@ window.onload = function(){
 		colorNode.options.length = 0;
 		if(modelNode.options[0].value == "") modelNode.remove(0);
 		colorNode.options.add(new Option("请选择颜色",""));
-		var index = modelNode.options[modelNode.selectedIndex].value;
-		for(var i=0;i<colorArr[index].length;++i)
+		var indexType = typeNode.options[typeNode.selectedIndex].value;
+		var indexBrand = brandNode.options[brandNode.selectedIndex].value;
+		var indexModel = modelNode.options[modelNode.selectedIndex].value;
+		var item = typeArr[indexType].brand[indexBrand].model[indexModel];
+		for(var i=0;i<item.color.length;++i)
 		{
-			colorNode.options.add(new Option(colorArr[index][i], i.toString()));
+			colorNode.options.add(new Option(item.color[i], i.toString()));
 		}
 	}
 	colorNode.onchange = function(){
